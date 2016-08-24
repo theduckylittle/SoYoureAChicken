@@ -42,6 +42,15 @@ button#more {
 	top: 10px;
 }
 
+button#clear {
+	right: 10px;
+	bottom: 10px;
+
+	color: brown;
+	border-color: brown;
+	background-color: tan;
+}
+
 svg {
 	position: absolute;
 	top: 0; left: 0;

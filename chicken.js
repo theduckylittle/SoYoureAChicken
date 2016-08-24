@@ -108,6 +108,14 @@ function elem_to_rect(elem) {
 
 }
 
+/** Clear out all the poop
+ *
+ */
+function clear_poop() {
+	d3.selectAll('.poop')
+		.remove();
+}
+
 /** Check to see if we 'ate' any corn
  */
 function eat_corn() {
@@ -121,7 +129,8 @@ function eat_corn() {
 				cluck();
 				//d3.select(this).remove();
 				d3.select(this)
-					.attr('xlink:href', 'images/poop.svg');
+					.attr('xlink:href', 'images/poop.svg')
+					.classed(['poop'], true);
 			}
 		});
 
