@@ -63,7 +63,7 @@ function add_corn(kernels) {
 		positions.push(random_pt());
 	}
 
-	d3.select('svg')
+	d3.select('#field')
 		.selectAll('.kernel')
 		.data(positions, function(d) { return d.id; })
 		.enter()
@@ -119,7 +119,9 @@ function eat_corn() {
 			var rect = elem_to_rect(d3.select(this));
 			if(intersects(rect, chicken_rect)) {
 				cluck();
-				d3.select(this).remove();
+				//d3.select(this).remove();
+				d3.select(this)
+					.attr('xlink:href', 'images/poop.svg');
 			}
 		});
 

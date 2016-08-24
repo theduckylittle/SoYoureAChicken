@@ -43,10 +43,16 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 <body onload="start_chicken()">
 
-<svg>
-	<rect id="playground" x="0" y="0" width="800" height="600" fill="lightgreen"/>
-	<image id="chicken" class="hide" xlink:href="images/chicken.png" x="0" y="0" height="50" width="60"/>
-	<image id="big-chicken" class="hide" xlink:href="images/chicken.png" x="0" y="0" height="50" width="60"/>
+<svg style="background-color: lightgreen">
+	<g id="field">
+	</g>
+
+	<g>
+		<image id="chicken" class="hide" xlink:href="images/chicken.svg" x="0" y="0" height="50" width="60"/>
+	</g>
+	<image id="big-chicken" class="hide" xlink:href="images/chicken.svg" x="0" y="0" height="50" width="60"/>
+
+	<rect id="playground" x="0" y="0" width="800" height="600" style="opacity: 0" fill="white"/>
 </svg>
 
 <button id="more" class="hide" onclick="add_corn(10)">More Corn!</button>
