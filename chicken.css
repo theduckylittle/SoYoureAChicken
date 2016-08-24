@@ -54,3 +54,8 @@ body {
 	width: 100%;
 	height: 100%;
 }
+
+text.title-text {
+	font-size: 36pt;
+	font-weight: bold;
+}

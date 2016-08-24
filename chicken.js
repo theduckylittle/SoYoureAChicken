@@ -167,6 +167,7 @@ function fly_text(string, delay) {
 		.attr('class', 'title-text')
 		.attr('x', CONF.width / 2.0)
 		.attr('y', CONF.height + 50)
+		.attr('text-anchor', 'middle')
 		.text(string);
 
 	
